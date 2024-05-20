@@ -25,7 +25,6 @@ class TestPlayer(unittest.TestCase):
     # uUse it to delete the stufff generated from running the tests eg; databases , allocated memory
     def tearDown(self) -> None:
         pass
-    
     def test_1(self):
         result=player.playing()
         self.assertEqual(result,True)
