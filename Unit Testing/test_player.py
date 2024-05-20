@@ -28,6 +28,10 @@ class TestPlayer(unittest.TestCase):
     def test_1(self):
         result=player.playing()
         self.assertEqual(result,True)
+    
+    def test_2(self):
+        result=player.playing()
+        self.assertEqual(result,True)
 
 if __name__=='__main__':
     unittest.main()
