@@ -2,10 +2,10 @@ playing = False
 def playing():
     global playing
     playing = True
-    print(playing)
+    print("Playing boolean " + str(playing))
     return playing
 
 def defending():
     defending = True
-    print(defending)
+    print("Defending boolean " + str(defending))
     return defending

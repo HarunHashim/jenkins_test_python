@@ -1,0 +1,10 @@
+INFO:root:Test 1 was successful
+INFO:root:Test 2 was successful
+INFO:root:Test 1 was successful
+INFO:root:Test 2 was successful
+INFO:root:Test 1 was successful
+ERROR:root:Test 2 Failed
+INFO:root:Test 1 was successful
+ERROR:root:Test 2 Failed
+INFO:root:Test 1 was successful
+ERROR:root:Test 2 Failed

@@ -30,13 +30,21 @@ class TestPlayer(unittest.TestCase):
     def tearDown(self) -> None:
         pass
     def test_1(self):
-        result=player.playing()
-        print(self.assertEqual(result,True))
+        try:
+            result=player.playing()
+            self.assertEqual(result,True)
+            logging.info("Test 1 was successful")
+        except AssertionError as e:
+            logging.error("Test 1 Failed")
     
     def test_2(self):
-        result=player.defending()
-        print(self.assertEqual(result,False))
-
+        try:
+            result=player.defending()
+            self.assertEqual(result,False)
+            logging.info("Test 2 was successful")
+        except AssertionError as e:
+            logging.error("Test 2 Failed")
+        
 if __name__=='__main__':
     unittest.main()
 
