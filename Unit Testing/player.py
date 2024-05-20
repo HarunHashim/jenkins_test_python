@@ -1,4 +1,6 @@
+playing = False
 def playing():
-    i=input()
-    print(i)
-    return 1
+    global playing
+    playing = True
+    print(playing)
+    return playing

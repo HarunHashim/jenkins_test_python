@@ -28,7 +28,7 @@ class TestPlayer(unittest.TestCase):
     
     def test_1(self):
         result=player.playing()
-        self.assertEqual(result,True)
+        self.assertEqual(result,1)
 
 if __name__=='__main__':
     unittest.main()
