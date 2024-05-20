@@ -30,7 +30,7 @@ class TestPlayer(unittest.TestCase):
         self.assertEqual(result,True)
     
     def test_2(self):
-        result=player.playing()
+        result=player.defending()
         self.assertEqual(result,True)
 
 if __name__=='__main__':
