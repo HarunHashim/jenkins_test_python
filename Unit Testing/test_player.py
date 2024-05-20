@@ -13,6 +13,10 @@
 
 import unittest
 import player
+import logging
+
+# Logging results for asier analysis
+logging.basicConfig(filename='test.log', level=logging.INFO)
 
 class TestPlayer(unittest.TestCase):
     # The setup function runs its code before every single test
@@ -27,11 +31,11 @@ class TestPlayer(unittest.TestCase):
         pass
     def test_1(self):
         result=player.playing()
-        self.assertEqual(result,True)
+        print(self.assertEqual(result,True))
     
     def test_2(self):
         result=player.defending()
-        self.assertEqual(result,False)
+        print(self.assertEqual(result,False))
 
 if __name__=='__main__':
     unittest.main()
